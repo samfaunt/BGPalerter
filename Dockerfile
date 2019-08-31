@@ -6,7 +6,7 @@ MAINTAINER SAMFTY <samfty@gmail.com>
 
 
 #Clone BGPalerter Repo
-RUN git clone https://github.com/nttgin/BGPalerter.git
+RUN git clone https://github.com/samfaunt/BGPalerter
 
 
 #Copy Endpoint script
