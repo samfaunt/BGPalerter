@@ -1,9 +1,5 @@
-#FROM centos/nodejs-10-centos7
 FROM centos/nodejs-10-centos7
 MAINTAINER SAMFTY <samfty@gmail.com>
-
-#WORKDIR /
-
 
 #Clone BGPalerter Repo
 RUN git clone https://github.com/samfaunt/BGPalerter
@@ -13,7 +9,7 @@ RUN git clone https://github.com/samfaunt/BGPalerter
 COPY start.sh .
 
 #Set Enviroment Variables
-ENV BGPaleter_asn="${BGPalerter_asn}"
+ENV BGPalerter_asn="${BGPalerter_asn}"
 
 CMD ["sh", "start.sh"]
 
